@@ -6,14 +6,18 @@ folder_num=$1
 
 folder_count=1
 
-for folder_index in {a..z}
-do
-        echo $folder_index
+if [[ $folder_num -ge 1 ]] && [[ $folder_num -le 32 ]]
+then
+    for folder_index in {a..z}
+    do
         if [[ $folder_count -le $folder_num ]]
         then
-                mkdir ./folder_$folder_index
-                let "folder_count=$folder_count+1"
+            mkdir ./folder_$folder_index
+            let "folder_count=$folder_count+1"
         else
-                break
+            exit 0
         fi
-done
+    done
+else
+    exit 1
+fi
