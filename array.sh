@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Place your code here
-
 folder_num=$1
 
 folder_count=1
@@ -25,3 +23,5 @@ then
 else
     exit 1
 fi
+
+# Place your code here
