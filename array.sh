@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Place your code here
+folder_num=$1
 
 if [[ $folder_num -ge 1 ]] && [[ $folder_num -le 32 ]]
 then
