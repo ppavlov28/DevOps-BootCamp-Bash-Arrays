@@ -10,7 +10,7 @@ then
     do
 	if [[ $folder_count -le $folder_num ]]
             then
-	        mkdir folder_$folder_index
+	        sudo mkdir folder_$folder_index
                 let "folder_count=$folder_count+1"
             else
                 exit 0
